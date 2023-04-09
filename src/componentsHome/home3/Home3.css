@@ -1,0 +1,172 @@
+.home3-box {
+    background-color: white;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    height: max-content;
+  }
+
+.nous-home-box {
+  width: 100%;
+  height: 100%;
+}
+
+.nous-title-back {
+    width: 80%;
+    height: 100px;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    background-color: rgb(248, 248, 248);
+}
+
+.nous-title {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 23px;
+    font-family: "Quicksand";
+    color:  rgb(8, 63, 109);
+}
+
+.info-box {
+    height: 650px;
+    width: 80%;
+    margin-left: 10%;
+    background-image: url("home3.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/*Boutton en savoir plus*/
+.savoir_btn {
+    position: absolute;
+    border-radius: 5px;
+    background-color: transparent;
+    opacity: 85%;
+    border: none;
+    text-align: right;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 18px;
+    width: 290px;
+    transition: all 0.5s;
+    cursor: pointer;
+    right: 12%;
+    margin-top: 38%;
+    }
+  
+    .savoir_btn span {
+      color: rgb(62, 94, 138);
+      cursor: pointer;
+      position: relative;
+      transition: 0.5s;
+    }
+  
+    .link_home {
+      color: unset;
+    }
+    
+    .savoir_btn span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+    
+    .savoir_btn:hover span {
+      padding-right: 20px;
+    }
+    
+    .savoir_btn:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+
+
+
+@media screen and (max-width : 1250px) {
+      .nous-title {
+        padding-top: 28px;
+        font-size: 30px;
+      }
+
+      .home3-box {
+        margin-bottom: -4%;
+      }
+  }
+
+@media screen and (max-width : 1050px) { 
+  .home3-box {
+    margin-bottom: -15%;
+  }
+}
+
+@media screen and (max-width : 900px) { 
+  .home3-box {
+    margin-bottom: -20%;
+    margin-top: -10%;
+  }
+}
+
+@media screen and (max-width : 800px) {
+  .home3-box {
+    margin-bottom: -30%;
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width : 720px) {
+
+  .nous-title-back {
+      height: 60px;
+  }
+    
+  .nous-title {
+    padding-top: 20px;
+    margin-bottom: 5%;
+    font-size: 25px;
+    }     
+
+  .savoir_btn {
+    margin-top: 35%;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width : 670px) {
+  .home3-box {
+    margin-top: -10%;
+    height: 700px;
+  }
+
+}
+
+@media screen and (max-width : 600px) {
+  .home3-box {
+    margin-bottom: -60%;
+    margin-top: -15%;
+  }
+}
+
+@media screen and (max-width : 550px) {
+  .home3-box {
+    margin-bottom: -70%;
+    margin-top: -10%;
+  }
+}
+
+@media screen and (max-width : 500px) {
+  .home3-box {
+    margin-bottom: -80%;
+    margin-top: -8%;
+  }
+}
+ 
+@media screen and (max-width : 450px) {
+  .home3-box {
+    margin:0;
+    height: 300px;
+    overflow: hidden;
+}
+}
+ 

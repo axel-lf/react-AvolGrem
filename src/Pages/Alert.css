@@ -1,0 +1,43 @@
+.modal-content {
+    
+    position: absolute;
+    height: 30vh;
+    width: 48vw;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+.close-modal {
+    position: relative;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+}
+
+.h2_alert{
+    position: fixed;
+    color: #042a4a;
+    
+}
+
+.p_alert{
+    color: #042a4a;
+    position: fixed;
+    top: 35%;
+    font-size: 18px;
+    width: 88%;
+}
+
+.close-alert{
+    position: fixed;
+    font-size: 16px;
+    color: #042a4a;
+    top: 80%;
+}
+

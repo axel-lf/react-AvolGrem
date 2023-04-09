@@ -1,0 +1,63 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'PT Sans';
+}
+
+/*titre simulation*/
+.simu-head-back { 
+    padding-top: 100px;
+    height: 650px;
+    width: 100%;
+    background-image: url(./maison_simu.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.simu-head-title {
+    font-size: 65px;
+    text-align: left; 
+}
+
+.simu-head-title p {
+    padding-top: 300px;
+    margin-left: 5%;   
+    margin-bottom: 20px;
+    color: white;
+}
+
+.line-head-simu {
+    margin-left: 5%;
+    width: 27%;
+    color: white;
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 40%;
+}
+
+.simu-choice{
+    color: rgb(255, 255, 255);
+    width: 65%;
+    text-justify: distribute;
+    margin-left: 30px; 
+}
+
+@media screen and (max-width : 890px){
+    .simu-head-title {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width : 450px){
+    .simu-head-back {
+        height: 90vh;
+    }
+    .simu-head-title {
+        font-size: 45px;
+    }
+}

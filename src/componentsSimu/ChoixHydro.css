@@ -1,0 +1,70 @@
+.choice3{
+    width: 400px;
+    position: relative;
+    width: 100%;
+}
+
+.choice-windturbine3 {
+    font-size: 3rem ;
+    color: white;
+    background-color:  rgb(8, 63, 109);
+    border: 0;
+    padding: 4px 10px;
+    transform: skewX(-4deg);
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.2s;
+    box-shadow: 5px 5px 0px rgb(150, 172, 209);
+}
+
+
+.choice-windturbine3:hover {
+    padding-right: 60px ;
+    box-shadow: 10px 10px 0px rgb(150, 172, 209);
+
+}
+
+.btn-windturbine3 {
+    font-size: 30px;
+}
+
+span.windturbine3 {
+    position: relative;
+    margin-right: 15px;
+    padding: 5px;
+}
+
+span.arrow3 {
+    visibility: hidden;
+    margin-left: -50px;
+    position: relative;
+    transition: 0.1s;
+    transform: skewX(15deg) !important;    
+}
+
+span.arrow3 :nth-child(2) {
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 140px;
+    width: 35px;
+    animation: color 2s infinite linear;
+}
+
+.choice-windturbine3:hover :nth-child(2){
+    visibility: visible;
+    color: white;
+    left: -70px;
+    top: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

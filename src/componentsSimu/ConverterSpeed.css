@@ -1,0 +1,55 @@
+.fieldset-convertspeed{
+    position: relative;
+    border: 1px solid rgb(255, 255, 255);
+    height: 80px;
+    width: 320px;
+    color: rgb(255, 255, 255);
+}
+
+.legend-converter-kspeed {
+    position: relative;
+    font-size: 11px;
+    left: 20px;
+    top: 12px;
+    font-style: italic;
+    color: white;
+
+}
+
+.input-converter-kspeed {
+    position: relative;
+    font-size: 14px;
+    max-width: 100px;
+    left: 20px;
+    top: 12px;
+    color: #042a4a;
+    
+}
+
+.legend-converter-speed {
+    position: relative;
+    font-size: 11px;
+    left: 200px;
+    top: -23px;
+    font-style: italic;
+    color: white;
+
+}
+
+.input-converter-speed {
+    position: relative;
+    font-size: 14px;
+    max-width: 100px;
+    left: 200px;
+    top: -23px;
+    color:#042a4a;
+}
+
+.texte-converterspeed{
+    position: relative;
+    font-size: 14px;
+    max-width: 100px;
+    left: 145px;
+    top: -42px;
+    color: white;
+}

@@ -1,0 +1,161 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Quicksand';
+}
+
+.home-head-back { 
+    padding-top: 100px;
+    height: 90vh;
+    width: 100%;
+    background-image: url(./eolienne.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.home-head-back .home-head-title {
+    padding-top: 90px;
+    width: 65%;
+    margin-left: 30px;
+    font-size: 45px;
+    background: linear-gradient(to right, rgb(71, 107, 158) 0, hsl(0, 0%, 100%) 10%, rgb(71, 107, 158) 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s infinite ;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 7px!important;
+}
+
+.home-head-back .home-sentence {
+    color:  rgb(54, 83, 123);
+    width: 60%;
+    text-align: justify;
+    margin-left: 30px; 
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 660px;
+  }
+}
+
+/*boutton "commencer la simulation"*/
+.simu_btn {
+  position: absolute;
+  border-radius: 5px;
+  background-color: rgb(62, 94, 138);
+  opacity: 85%;
+  border: none;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 18px;
+  width: 290px;
+  transition: all 0.5s;
+  cursor: pointer;
+  bottom: 5%;
+  right: 6%;
+  }
+
+  .simu_btn span {
+    color: white;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .link_home {
+    color: unset;
+  }
+  
+  .simu_btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .simu_btn:hover span {
+    padding-right: 20px;
+  }
+  
+  .simu_btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+@media screen and (max-height : 300px) {
+  
+}
+
+@media screen and (max-width : 1250px){
+  .home-head-back .home-head-title {
+    font-size: 40px;
+  }
+.home-head-back .home-sentence {
+  font-size: 14px;
+  }
+.simu_btn {
+  margin-top: 23%;
+  }
+}
+
+
+@media screen and (max-width : 750px){
+  .simu_btn {
+  margin-top: 28%;
+  }
+}
+
+@media screen and (max-width : 650px){
+  .home-head-back .home-head-title {
+    font-size: 36px;
+    width: 80%;
+  }
+.home-head-back .home-sentence {
+  font-size: 13px;
+  }
+
+.simu_btn {
+  font-size: 15px;
+  padding: 15px;
+  width: 250px;
+  margin-top: 38%;
+  }
+}
+
+@media screen and (max-width : 550px){
+
+.simu_btn {
+  margin-top: 140px;
+  }
+}
+
+@media screen and (max-width : 450px){
+  .home-head-back .home-head-title {
+    font-size: 30px;
+    width: 80%;
+  }
+.home-head-back .home-sentence {
+  font-size: 11px;
+  width: 80%;
+  margin-top: 6%;
+  }
+
+.simu_btn {
+  margin-top: 80%;
+  }
+}

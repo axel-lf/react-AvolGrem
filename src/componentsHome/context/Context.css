@@ -1,0 +1,381 @@
+/*box context*/
+.context-box {
+    height: 1450px;
+}
+
+.context-back {
+    height: 700px;
+    background-size: 100%; 
+    background-image: linear-gradient(rgba(20, 54, 105, 0.664) 100%, rgba(20, 54, 105, 0.473) 100%),url("fond_context.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.context-title {
+    padding-top: 7%;
+    text-align: left;
+    margin-left: 10%;
+    font-size: 50px;
+    font-family: "Quicksand";
+    color:  white;
+    z-index: 1;
+}
+
+.text-context {
+    text-align: justify;
+    padding-top: 7%;
+    text-indent: 3rem;
+    margin-left: 12.5%;
+    width: 75%;
+    font-size: 18px;
+    font-family: "Quicksand";
+    color:  white;
+    z-index: 1;
+}
+
+/*box chiffres clés*/
+.key-figures-box {
+    height: 700px;
+    padding-top: 4%;
+    margin-bottom: 4%;
+    background-color: #042a4a;
+}
+
+.key-figures-title-back {
+    width: 96%;
+    height: 100px;
+    margin-left: 2%;
+    border: 1px solid rgb(248, 248, 248);
+}
+
+.key-figures-title {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 19px;
+    font-family: "Quicksand";
+    color: rgb(248, 248, 248);
+  }
+
+/*tableau chiffres cles*/
+.key-figures-table {
+    width:100%;
+    min-height: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.col1, .col2, .col3 {
+    width: 27%;
+    color:  rgb(248, 248, 248);
+    margin-top: 6%;
+}
+
+.col1-lg1, .col2-lg1, .col3-lg1 {
+   display: inline-block;
+   height: 140px;
+}
+
+.chiffre {
+    margin-right: 20px;
+    float: left;
+    font-size: 85px;
+}
+
+.unite {
+    float:right;
+    font-size: 42px;
+    margin-top: 38px;
+}
+
+/*première colonne*/
+.col1-lg2 {
+    background-image: url("inst_renouv.png");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+.col1-lg2:hover {
+    background-image: none;
+}
+
+/*deuxième colonne*/
+.col2-lg2 {
+    background-image: url("CO2.png");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+.col2-lg2:hover {
+    background-image: none;
+}
+
+/* =troisième colonne*/
+.col3-lg2 {
+    background-image: url("euros_mega.png");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+.col3-lg2:hover {
+    background-image: none;
+}
+
+.col1-lg2-txt, .col2-lg2-txt, .col3-lg2-txt {
+    margin-top: 10%;
+    font-size: 14px;
+    text-align: center;
+    text-indent: 3rem;
+    opacity: 0;
+    height: 300px;
+}
+
+.col1-lg2-txt:hover, .col2-lg2-txt:hover, .col3-lg2-txt:hover {
+    opacity: 1;
+}
+
+.rte {
+    position: relative;
+    font-size: 10px;
+    text-align: right;
+    margin-top: 570px;
+    margin-right: 2%;
+}
+
+@media screen and (max-width : 1250px){
+    .context-box {
+        height: 2600px;
+    }
+
+    .context-back {
+        height: 700px;
+    }
+
+
+      .key-figures-title {
+        padding-top: 28px;
+        font-size: 30px;
+      }
+    
+    .key-figures-table {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .key-figures-box {
+        height: 1850px;
+    }
+
+    .col1, .col2, .col3 {
+        width: 45%;
+        color:  rgb(248, 248, 248);
+    }
+
+    .rte {
+        margin-top: 1700px;
+    }
+
+}
+
+@media screen and (max-width : 1000px) {
+    .context-box {
+        height: 2550px;
+    }
+
+    .context-back {
+        height: 750px;
+    }
+
+    .key-figures-box {
+        height: 1750px;
+    }
+
+    .rte {
+        margin-top: 1600px;
+    }
+}
+
+
+@media screen and (max-width : 900px) {
+    .context-box {
+        height: 2650px;
+    }
+
+    .context-back {
+        height: 770px;
+    }
+
+    .key-figures-box {
+        height: 1720px;
+    }
+
+    .rte {
+        margin-top: 1570px;
+    }
+}
+
+@media screen and (max-width : 800px) {
+
+    .context-box {
+        height: 2500px;
+    }
+
+    .context-back {
+        height: 800px;
+    }
+
+    .chiffre {
+        font-size: 60px;
+        margin-top: 10px;
+    }
+
+    .unite {
+        font-size: 30px;
+    }
+
+    .key-figures-box {
+        height: 1700px;
+    }
+
+    .col1-lg2-txt, .col2-lg2-txt, .col3-lg2-txt {
+        font-size: 12px;
+    }
+
+    .rte {
+        margin-top: 1550px;
+    }
+}
+
+@media screen and (max-width : 720px) {
+
+    .rte {
+        margin-top: 1530px;
+    }
+
+}
+
+@media screen and (max-width : 670px) {
+
+    .context-box {
+        height: 2700px;
+    }
+
+    .context-back {
+        height: 850px;
+    }
+    
+    .col1-lg1, .col2-lg1, .col3-lg1 {
+        height: 90px;
+     }
+
+
+    .col1, .col2, .col3 {
+        width: 90%;
+        color:  rgb(248, 248, 248);
+        margin-top: 6%;
+    }
+}
+
+@media screen and (max-width : 600px) {
+
+    .context-back {
+        height: 900px;
+    }
+
+    .key-figures-box {
+        height: 1650px;
+    }
+
+    .rte {
+        margin-top: 1500px;
+    }
+}
+
+@media screen and (max-width : 550px) {
+    .context-back {
+        height: 950px;
+    }
+    
+    .key-figures-box {
+        height: 1630px;
+    }
+
+    .rte {
+        margin-top: 1480px;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    .context-back {
+        height: 970px;
+    }
+    
+    .key-figures-box {
+        height: 1610px;
+    }
+
+    .rte {
+        margin-top: 1460px;
+    }
+
+}
+
+@media screen and (max-width : 480px) {
+    .context-back {
+        height: 1010px;
+    }
+}
+
+@media screen and (max-width : 450px) {
+    .context-box {
+        height: 2550px;
+        overflow: hidden;
+    }
+    .context-back {
+        height: 870px;
+    }
+    .context-title {
+        font-size: 35px;
+        padding-top: 15%;
+    }
+    .key-figures-title-back {
+        height: 80px;
+    }
+
+    .key-figures-title {
+        padding-top: 20px;
+        font-size: 25px;
+      }
+
+    .key-figures-box {
+        height: 1600px;
+    }
+    
+    .text-context {
+        font-size: 15px;
+        padding-top: 15%;
+        width: 75%;
+        margin: auto;
+    }
+
+    .col1-lg2-txt, .col2-lg2-txt, .col3-lg2-txt {
+        font-size: 10px;
+    }
+
+    .rte {
+        margin-bottom: 1550px;
+    }
+}
+
+
+
+
+
+
+

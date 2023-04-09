@@ -1,0 +1,435 @@
+* {
+  font-family: "Quicksand";
+}
+
+p {
+  color: rgb(8, 63, 109);
+}
+
+.home-box {
+  background-color: white;
+  height: max-content;
+  margin-bottom: 7%;
+  margin-top: 4%;
+}
+
+/*div du bloc pv, eolien et hydrolien*/
+.energie-home-box {
+    background-color: white;
+    width: 100%;
+}
+
+/*div du titre ressources renouvelables*/
+.energie-renou-title-back {
+  width: 96%;
+  height: 100px;
+  margin-left: 2%;
+  margin-bottom: 4%;
+  background-color: rgb(248, 248, 248);
+}
+
+.energie-renou-title {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 23px;
+  font-family: "Quicksand";
+  color:  rgb(8, 63, 109);
+}
+
+
+/*contient les boites card-pv, cardeol et card-hydro*/
+.energies-box {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/*Panneaux solaires*/
+.pv-card {
+    display: inline-block;
+    width: 31%;
+    max-width: 100%;
+    min-height: 500px;
+    overflow: hidden;
+    background-image: url(./solaire.jpg);
+    background-size: cover;
+}
+
+.pv-info {
+    position: relative;
+    width: 101%;
+    height: 470px;
+    background-color:rgb(223, 243, 255);
+    opacity: 95%;
+    transform: translateY(100%)
+      translateY(-88px)
+      translateZ(0);
+    transition: transform 0.3s ease-out;
+  }
+
+  .pv-info:before {
+    z-index: -1;
+    display: block; position: absolute;
+    content: ' ';
+    width: 100%; height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    opacity: 0.25;
+    transform: translateY(-100%)
+      translateY(88px)
+      translateZ(0);
+    transition: transform 0.3s ease-out;
+  }
+
+  .pv-title {
+      margin-left: 5px;
+      padding: 40px;
+      font-size: 40px;
+      line-height: 1;
+      color:rgb(8, 63, 109);
+  }
+  
+  .pv-text {
+    width: 80%;
+    margin-left: 10%;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+.pv-card:hover .pv-info,
+.pv-card:hover .pv-info:before {
+  transform: translateY(0) translateZ(0);
+}
+
+
+/*éolien*/
+.eol-card {
+  display: inline-block;
+  width: 31%;
+  max-width: 100%;
+  min-height: 500px;
+  overflow: hidden;
+  background-image: url(./eolienne_domestique.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.eol-info {
+  position: relative;
+  width: 101%;
+  height: 470px;
+  background-color:rgb(223, 243, 255);
+  opacity: 95%;
+  transform: translateY(100%)
+    translateY(-88px)
+    translateZ(0);
+  transition: transform 0.3s ease-out;
+}
+
+.eol-info:before {
+  z-index: -1;
+  display: block; position: absolute;
+  content: ' ';
+  width: 100%; height: 100%;
+  overflow: hidden;
+  background-size: cover;
+  opacity: 0.25;
+  transform: translateY(-100%)
+    translateY(88px)
+    translateZ(0);
+  transition: transform 0.3s ease-out;
+}
+
+.eol-title {
+  margin-left: 5px;
+  padding: 40px;
+  font-size: 40px;
+  line-height: 1;
+  color: rgb(8, 63, 109);
+}
+
+.eol-text {
+  width: 80%;
+  margin-left: 10%;
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.eol-card:hover .eol-info,
+.eol-card:hover .eol-info:before {
+transform: translateY(0) translateZ(0);
+}
+
+
+/*hydrolien*/
+.hydro-card{
+  display: inline-block;
+  width: 31%;
+  max-width: 100%;
+  min-height: 500px;
+  overflow: hidden;
+  background-image: url(./hydro.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.hydro-info {
+  position: relative;
+  width: 101%;
+  height: 470px;
+  background-color:rgb(223, 243, 255);
+  opacity: 95%;
+  transform: translateY(100%)
+    translateY(-88px)
+    translateZ(0);
+  transition: transform 0.3s ease-out;
+}
+
+.hydro-info:before {
+  z-index: -1;
+  display: block; position: absolute;
+  content: ' ';
+  width: 100%; height: 100%;
+  overflow: hidden;
+  background-size: cover;
+  opacity: 0.25;
+  transform: translateY(-100%)
+    translateY(88px)
+    translateZ(0);
+  transition: transform 0.3s ease-out;
+}
+
+.hydro-title {
+  margin-left: 5px;
+  padding: 40px;
+  font-size: 40px;
+  line-height: 1;
+  color:rgb(8, 63, 109);
+}
+
+.hydro-text {
+  width: 80%;
+  margin-left: 10%;
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.hydro-card:hover .hydro-info,
+.hydro-card:hover .hydro-info:before {
+transform: translateY(0) translateZ(0);
+}
+
+/*Boutton en savoir plus*/
+.nrj_btn {
+  position: absolute;
+  border-radius: 5px;
+  background-color: transparent;
+  opacity: 85%;
+  border: none;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 18px;
+  width: 290px;
+  transition: all 0.5s;
+  cursor: pointer;
+  right: 0;
+  margin-top:1.5%;
+  }
+
+  .nrj_btn span {
+    color: rgb(62, 94, 138);
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .link_home {
+    color: unset;
+  }
+  
+  .nrj_btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .nrj_btn:hover span {
+    padding-right: 20px;
+  }
+  
+  .nrj_btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+@media screen and (max-width : 1250px) {
+   .home-box {
+    margin-bottom: 8.5%;
+   }
+  
+   .energie-renou-title-back {
+      width: 65%;
+      margin: auto;
+      margin-top: 2%;
+    }
+
+    .energie-renou-title {
+      padding-top: 28px;
+      font-size: 30px;
+    }
+
+    .energies-box {
+      display: block;
+    }
+  
+    .eol-card {
+      display: block;
+      margin:auto;
+      margin-top: 30px;
+      width: 65%;
+    }
+    .pv-card {
+      display: block;
+      margin:auto;
+      margin-top: 30px;
+      width: 65%;
+    }
+    .hydro-card {
+      display: block;
+      margin:auto;
+      margin-top: 30px;
+      width: 65%;
+    }
+
+    .eol-title {
+      font-size: 35px;
+      margin-left: 0;
+    }
+
+    .pv-title {
+      font-size: 35px;
+      margin-left: 0;
+    }
+
+    .hydro-title {
+      font-size: 35px;
+      margin-left: 0;
+    }
+
+    .eol-text {
+      font-size: 16.5px;
+      margin-left: 8%;
+    }
+
+    .pv-text {
+      font-size: 16.5px;
+      margin-left: 8%;
+    }
+
+    .hydro-text {
+      font-size: 16.5px;
+      margin-left: 8%;
+    }
+
+    .nrj_btn {
+      margin: auto;
+      margin-right: 12%;
+      }
+}
+
+@media screen and (max-width : 952px) {
+  .energie-renou-title {
+    padding-top: 15px;
+  }
+}
+
+@media screen and (max-width : 720px) {
+  .home-box {
+    margin-bottom: 13%;
+  }
+  
+  .energie-renou-title-back {
+    width: 80%;
+    height: 82px;
+  }
+
+  .energie-renou-title {
+    padding-top: 13px;
+    font-size: 23px;
+  }
+
+  .eol-card {
+    width: 80%;
+  }
+  .pv-card {
+    width: 80%;
+  }
+  .hydro-card {
+    width: 80%;
+  }
+
+  .nrj_btn {
+    margin-right: 0%;
+    }
+
+}
+
+
+@media screen and (max-width : 450px) {
+
+  .home-box {
+    margin-bottom: 17%;
+  }
+
+  .energie-renou-title-back {
+    width: 96%;
+    height: 100px;
+    margin-left: 2%;
+    margin-bottom: 4%;
+    background-color: rgb(248, 248, 248);
+  }
+  
+  .energie-renou-title {
+    font-family: 'Quicksand';
+    font-size: 25px;
+    padding-top: 16px;
+  }
+
+  .pv-title {
+    font-size: 30px;
+    padding: 45px ;
+  }
+
+  .pv-text {
+    font-size: 14px;
+  }
+
+  .eol-title {
+    font-size: 30px;
+    padding: 45px ;
+  }
+
+  .eol-text {
+    font-size: 14px;
+  }
+
+  .hydro-title {
+    font-size: 30px;
+    padding: 45px ;
+  }
+
+  .hydro-text {
+    font-size: 14px;
+  }
+
+  .nrj_btn {
+    font-size: 15px;
+  }
+}

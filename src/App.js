@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import Propos from "./Pages/Propos";
+import Simu from "./Pages/Simu";
+import AlgoWind from "./Pages/AlgoWind";
+import AlgoSun from "./Pages/AlgoSun";
+import AlgoHydro from "./Pages/AlgoHydro";
+import Energies from "./Pages/Energies";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/propos" element={<Propos />} />
+        <Route path="/simulation" element={<Simu />} />
+        <Route path="/simulation/vent" element={<AlgoWind />} />
+        <Route path="/simulation/sun" element={<AlgoSun />} />
+        <Route path="/simulation/hydro" element={<AlgoHydro />} />
+        <Route path="/Energies_renouvelables" element={<Energies />} />
+      </Routes>
     </div>
   );
 }

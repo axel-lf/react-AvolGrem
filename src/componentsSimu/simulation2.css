@@ -1,0 +1,327 @@
+/*image présentation simulation*/
+/*titre guide dela simulation*/
+.guide-title-back {
+    width: 90%;
+    height: 100px;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    background-color: rgb(248, 248, 248);
+  }
+  
+  .guide-title {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 23px;
+    font-family: "Quicksand";
+    color:  rgb(8, 63, 109);
+  }
+
+/*image*/
+.img-simu {
+    background-image: url(guide_simulation.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 70%;
+    height: 450px;
+    margin-left: 15%;
+    margin-bottom: 4%;
+}
+
+/*Présentation simulation/ energies renouvelables*/
+.simu-box {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*bloc regroupand la phrase et les boutons choix*/
+.choix-back {
+    background-image: url(back-choix.jpg);
+    background-position-y: -350px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+/*bloc de la phrase de présentation*/
+.simu-sentence {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    color: #042a4a;
+    width: 80%;
+    height: 100px;
+    margin-left: 10%;
+}
+
+/*bloc des boutons de simulation*/
+.simu-btn-box {
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+    margin-left: 15%;
+    margin-top: 2%;
+    padding-bottom: 5%;
+}
+
+.simu-col1{
+    display: inline-block;
+    position: relative;
+    width: 33%;
+}
+
+.simu-col2 {
+    display: inline-block;
+    position: relative;
+    width: 33%;
+}
+
+.simu-col3 {
+    display: inline-block;
+    position: relative;
+    width: 33%;
+}
+
+/*LCOE et CO2 explications*/ 
+/*titre quelques explications*/
+.title-back-lcoe-co2 {
+    width: 90%;
+    height: 100px;
+    margin-left: 5%;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    background-color: rgb(248, 248, 248);
+}
+
+.title-lcoe-co2 {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 23px;
+    font-family: "Quicksand";
+    color:  rgb(8, 63, 109);
+}
+
+.case-lcoe-co2 {
+    height: 400px;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    background-color: rgb(248, 248, 248);
+}
+
+/*LCO2 et CO2*/
+.table-LCOE-CO2 {
+    width: 100%;
+    height: 150px;
+}
+
+
+.img-LCOE {
+    background-image: url("LCOE.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+.txt-LCOE {
+    width: 80%;
+    height: 50%;
+    padding-right: 5%;
+    text-align: justify;
+    font-size: 16px;
+    color: #042a4a;
+    line-height: 1.3;
+}
+
+.img-CO2 {
+    background-image: url("CO2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 30%;
+}
+
+.txt-CO2 {
+    width: 80%;
+    height: 50%;
+    padding-left: 5%;
+    text-align: justify;
+    font-size: 16px;
+    color: #042a4a;
+    line-height: 1.3;
+}
+
+
+.titre-lcoe-co2 {
+    font-size: 25px;
+    color: #042a4a;  
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+.text-lcoe-co2 {
+    font-size: 16px;
+    color: #042a4a;  
+}
+
+
+@media screen and (max-width : 1200px){
+    .simu-btn-box {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    .img-simu {
+        height: 400px;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .guide-title, .title-lcoe-co2{
+        padding-top: 28px;
+        font-size: 30px;
+    }
+
+    .simu-sentence {
+        font-size: 25px;
+    }
+
+    .txt-CO2 {
+        font-size: 14px;
+    }
+
+    .txt-LCOE {
+        font-size: 14px;
+    }
+
+    .img-LCOE {
+        background-size: 100%;
+    }
+
+    .img-CO2 {
+        background-size: 100%;
+    }
+}
+
+@media screen and (max-width : 1000px){
+
+    .simu-btn-box {
+        display: block;
+    }
+
+    .simu-sentence {
+        text-align: left;
+        padding-bottom: 0%;
+    }
+
+    .img-simu {
+        height: 350px;
+    }
+
+    .simu-col1 {
+        display: block;
+        width: 100%;
+        margin-left: 35%;
+        padding-bottom: 5%;
+    }
+    .simu-col2 {
+        display: block;
+        width: 100%;
+        margin-left: 34%;
+        padding-bottom: 5%;
+    }
+    .simu-col3 {
+        display: block;
+        width: 100%;
+        margin-left: 33%;
+    }
+
+}
+
+@media screen and (max-width : 900px) {
+    .img-simu {
+        height: 300px;
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width : 770px) {
+    .img-simu {
+        background-size: 100%;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width : 720px) {
+    .guide-title-back, .title-back-lcoe-co2 {
+        height: 60px;
+    }
+      
+    .guide-title, .title-lcoe-co2 {
+      padding-top: 13px;
+      margin-bottom: 5%;
+      font-size: 23px;
+      } 
+
+    .simu-sentence {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width : 600px){
+
+    .simu-sentence {
+        font-size: 20px;
+    }
+
+    .img-simu {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .simu-col1 {
+        margin-left: 20%;
+    }
+    .simu-col2 {
+        margin-left: 20%;
+    }
+    .simu-col3 {
+        margin-left: 20%;
+    }
+
+    .txt-CO2 {
+        font-size: 10px;
+    }
+
+    .txt-LCOE {
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width : 500px) {
+    .simu-btn-box {
+        margin-top: 10%;
+    }
+
+    .case-lcoe-co2 {
+        height: 350px;
+    }
+}
+
+
+@media screen and (max-width : 450px) {
+    .choix-back {
+        background-position-y: -400px;
+    }
+    
+    
+}
+
